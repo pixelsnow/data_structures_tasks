@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Task3 = () => {
   const [stack, setStack] = useState([]);
   const [pushInput, setPushInput] = useState("");
+  const [popped, setPopped] = useState(null);
 
   const handleInputChange = (e) => {
     setPushInput(e.target.value);
@@ -19,7 +20,12 @@ const Task3 = () => {
     console.log(stack);
   };
 
-  const handlePop = () => {};
+  const handlePop = () => {
+    if (stack.length) {
+      const res = stack.pop();
+      setPopped(res);
+    }
+  };
 
   return (
     <div>
@@ -30,7 +36,6 @@ const Task3 = () => {
           Push
         </button>
       </form>
-
       <p>
         <span>
           <span>[ </span>
@@ -39,7 +44,7 @@ const Task3 = () => {
         </span>
       </p>
       <button onClick={handlePop}>Pop</button>
-      <p></p>
+      {popped !== null && <p>{popped}</p>}
     </div>
   );
 };
