@@ -22,10 +22,7 @@ const Task1 = () => {
     <div>
       <h1>Task1</h1>
       <input type="text" onChange={handleInputChange} />
-      <div className="res_1">
-        <p>Palindrome?</p>
-        <Result isPalindrome={isPalindrome(text)} />
-      </div>
+      {text.length > 0 && <Result isPalindrome={isPalindrome(text)} />}
     </div>
   );
 };
