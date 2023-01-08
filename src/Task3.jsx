@@ -24,6 +24,8 @@ const Task3 = () => {
     if (stack.length) {
       const res = stack.pop();
       setPopped(res);
+    } else {
+      setPopped("");
     }
   };
 
