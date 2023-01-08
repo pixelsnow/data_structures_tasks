@@ -19,7 +19,7 @@ const Task1 = () => {
   };
 
   return (
-    <div>
+    <div className="task_container">
       <h1>Task1</h1>
       <input type="text" onChange={handleInputChange} />
       {text.length > 0 && <Result isPalindrome={isPalindrome(text)} />}

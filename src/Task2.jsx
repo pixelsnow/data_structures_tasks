@@ -35,7 +35,7 @@ const Task2 = () => {
   };
 
   return (
-    <div>
+    <div className="task_container">
       <h1>Task2</h1>
       <p>Enter numbers separated by space</p>
       <input type="text" onChange={handleInputChange} />
