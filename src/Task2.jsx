@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Task2 = () => {
   const [numbers, setNumbers] = useState([]);
   const [sorted, setSorted] = useState([]);
+  const [showSorted, setShowSorted] = useState(false);
 
   const handleInputChange = (e) => {
     setNumbers(
@@ -11,6 +12,7 @@ const Task2 = () => {
         .split(" ")
         .map((elem) => +elem)
     );
+    setShowSorted(false);
   };
 
   const handleSort = () => {
@@ -29,6 +31,7 @@ const Task2 = () => {
       console.log("sorting...", clone);
     }
     setSorted(clone);
+    setShowSorted(true);
   };
 
   return (
@@ -43,12 +46,15 @@ const Task2 = () => {
           {numbers.join(", ")}
           <span> ]</span>
         </span>
-        {` -> `}
-        <span>
-          <span>[ </span>
-          {sorted.join(", ")}
-          <span> ]</span>
-        </span>
+
+        {showSorted && (
+          <span>
+            {` -> `}
+            <span>[ </span>
+            {sorted.join(", ")}
+            <span> ]</span>
+          </span>
+        )}
       </p>
     </div>
   );
