@@ -2,21 +2,18 @@ import React, { useState } from "react";
 
 import Result from "./Task1/Result";
 
+import "./Task.css";
+
 const Task1 = () => {
   const [text, setText] = useState("");
 
   const handleInputChange = (e) => {
     setText(e.target.value);
-    console.log(text);
   };
 
   const isPalindrome = (string) => {
     for (let i = 0; i < Math.floor(string.length / 2); i++) {
-      console.log("len = ", string.length, ", i = ", i);
-      if (string[i] !== string[string.length - i - 1]) {
-        console.log(string[i], "=/=", string[string.length - i - 1]);
-        return false;
-      }
+      if (string[i] !== string[string.length - i - 1]) return false;
     }
     return true;
   };
@@ -25,7 +22,10 @@ const Task1 = () => {
     <div>
       <h1>Task1</h1>
       <input type="text" onChange={handleInputChange} />
-      <Result isPalindrome={isPalindrome(text)} />
+      <div className="res_1">
+        <p>Palindrome?</p>
+        <Result isPalindrome={isPalindrome(text)} />
+      </div>
     </div>
   );
 };
