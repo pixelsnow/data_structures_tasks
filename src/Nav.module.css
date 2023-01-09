@@ -12,9 +12,10 @@
 
 .menu ul li a {
   padding: 1rem 1.5rem;
-  color: black;
+  color: white;
 }
 
 .menu ul li a:hover {
-  background-color: lightgoldenrodyellow;
+  background-color: lightpink;
+  color: black;
 }
