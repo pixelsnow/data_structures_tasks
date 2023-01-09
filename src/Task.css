@@ -1,8 +1,8 @@
 .task_container {
   background-color: white;
-  padding: 3rem;
+  padding: 3rem 0 4rem;
   border-radius: 1rem;
-  border: 1px solid black;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10,23 +10,38 @@
 }
 
 button {
-  padding: 0.5rem 1.2rem;
+  height: 2.2rem;
+  padding: 0 1.2rem;
   border: none;
   border-radius: 0.3rem;
   background-color: lightpink;
-  margin: 1rem 0;
+  margin: 1.5rem 0 1.2rem;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 input {
-  margin: 1rem 1rem 1rem 0;
-  padding: 0.5rem;
-  border: 1px solid black;
+  margin: 1.5rem 1rem 1.2rem 0;
+  height: 2.2rem;
+  padding: 0 1rem;
+  border: none;
   border-radius: 0.3rem;
-  background-color: #eee;
+  background-color: #e6e6e6;
   width: 250px;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .task_container h1 {
   text-align: center;
-  margin: 1rem 0;
+  margin: 0 0 2rem 0;
+  font-size: 2.5rem;
+}
+
+.bracket {
+  font-size: 1.5rem;
+}
+
+.legend {
+  color: rgb(170, 170, 170);
 }

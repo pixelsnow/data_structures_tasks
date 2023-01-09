@@ -36,23 +36,25 @@ const Task2 = () => {
 
   return (
     <div className="task_container">
-      <h1>Task2</h1>
-      <p>Enter numbers separated by space</p>
-      <input type="text" onChange={handleInputChange} />
-      <button onClick={handleSort}>Sort</button>
+      <h1>2. Bubble sort</h1>
+      <p>Enter numbers separated by spaces</p>
+      <div>
+        <input type="text" onChange={handleInputChange} />
+        <button onClick={handleSort}>Sort</button>
+      </div>
+
       <p>
         <span>
-          <span>[ </span>
+          <span className="bracket">[ </span>
           {numbers.join(", ")}
-          <span> ]</span>
+          <span className="bracket"> ] </span>
         </span>
-
         {showSorted && (
           <span>
             {` -> `}
-            <span>[ </span>
+            <span className="bracket"> [ </span>
             {sorted.join(", ")}
-            <span> ]</span>
+            <span className="bracket"> ]</span>
           </span>
         )}
       </p>

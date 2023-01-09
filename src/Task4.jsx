@@ -31,7 +31,7 @@ const Task4 = () => {
 
   return (
     <div className="task_container">
-      <h1>Task3</h1>
+      <h1>4. Queue</h1>
       <form>
         <input type="text" value={enqueueInput} onChange={handleInputChange} />
         <button type="submit" onClick={handleEnqueue}>
@@ -39,11 +39,11 @@ const Task4 = () => {
         </button>
       </form>
       <p>
-        <span>
-          <span>[ </span>
-          {queue.join(", ")}
-          <span> ]</span>
-        </span>
+        <span className="legend">front</span>
+        <span className="bracket"> [ </span>
+        {queue.join(", ")}
+        <span className="bracket"> ] </span>
+        <span className="legend">back</span>
       </p>
       <button onClick={handleDequeue}>Dequeue</button>
       {dequeued !== null && <p>{dequeued}</p>}

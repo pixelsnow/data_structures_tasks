@@ -1,7 +1,9 @@
 .true {
-  color: lightseagreen;
+  color: rgb(63, 191, 161);
+  font-size: 2rem;
 }
 
 .false {
-  color: coral;
+  color: #ff7388;
+  font-size: 2rem;
 }

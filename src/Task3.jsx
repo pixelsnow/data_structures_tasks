@@ -31,7 +31,7 @@ const Task3 = () => {
 
   return (
     <div className="task_container">
-      <h1>Task3</h1>
+      <h1>3. Stack</h1>
       <form>
         <input type="text" value={pushInput} onChange={handleInputChange} />
         <button type="submit" onClick={handlePush}>
@@ -39,11 +39,11 @@ const Task3 = () => {
         </button>
       </form>
       <p>
-        <span>
-          <span>[ </span>
-          {stack.join(", ")}
-          <span> ]</span>
-        </span>
+        <span className="legend">bottom</span>
+        <span className="bracket"> [ </span>
+        {stack.join(", ")}
+        <span className="bracket"> ] </span>
+        <span className="legend">top</span>
       </p>
       <button onClick={handlePop}>Pop</button>
       {popped !== null && <p>{popped}</p>}
