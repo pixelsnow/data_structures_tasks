@@ -3,10 +3,14 @@
   padding: 3rem;
   border-radius: 1rem;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.2rem;
   border: none;
   border-radius: 0.3rem;
   background-color: lightpink;
@@ -19,6 +23,7 @@ input {
   border: 1px solid black;
   border-radius: 0.3rem;
   background-color: #eee;
+  width: 250px;
 }
 
 .task_container h1 {
