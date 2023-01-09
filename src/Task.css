@@ -1,5 +1,8 @@
 .task_container {
-  background-color: peachpuff;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 1px solid black;
 }
 
 button {
@@ -7,4 +10,18 @@ button {
   border: none;
   border-radius: 0.3rem;
   background-color: lightpink;
+  margin: 1rem 0;
+}
+
+input {
+  margin: 1rem 1rem 1rem 0;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  background-color: #eee;
+}
+
+.task_container h1 {
+  text-align: center;
+  margin: 1rem 0;
 }

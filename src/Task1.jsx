@@ -21,6 +21,7 @@ const Task1 = () => {
   return (
     <div className="task_container">
       <h1>Task1</h1>
+      <p>Enter text to check if it's a palindrome</p>
       <input type="text" onChange={handleInputChange} />
       {text.length > 0 && <Result isPalindrome={isPalindrome(text)} />}
     </div>
